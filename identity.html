@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruston Baptist Mission · Login</title>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function() {
+      window.netlifyIdentity.open();
+      window.netlifyIdentity.on('login', function() {
+        window.location.href = '/admin/';
+      });
+    });
+  </script>
+</body>
+</html>
