@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: fnk3/ruston-baptist-mission
+  branch: main
+  client_id: Ov23lib4uuq3au5JpIxz
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "events"
+    label: "Events"
+    file: "_data/events.json"
+    description: "Manage upcoming events displayed on the website"
+    fields:
+      - label: "Events"
+        name: "events"
+        widget: "list"
+        fields:
+          - { label: "Day",     name: "day",     widget: "string", hint: "Two-digit day, e.g. 01" }
+          - { label: "Month",   name: "month",   widget: "string", hint: "Three-letter month, e.g. Jun" }
+          - { label: "Title",   name: "title",   widget: "string" }
+          - { label: "Details", name: "details", widget: "string", hint: "e.g. Sunday · 10:00 AM · 505 W Alabama Ave" }
+          - label: "Tag"
+            name: "tag"
+            widget: "select"
+            options: ["Weekly", "Special", "Cancelled"]
