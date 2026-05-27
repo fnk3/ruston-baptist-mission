@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: fnk3/ruston-baptist-mission
+  name: git-gateway
   branch: main
-  client_id: Ov23lib4uuq3au5JpIxz
 
 media_folder: "images"
 public_folder: "/images"
